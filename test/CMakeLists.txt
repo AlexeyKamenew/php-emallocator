@@ -19,6 +19,7 @@ find_package(GTest REQUIRED)
 
 add_executable(emallocator_test source/emallocator_test.cpp)
 target_link_libraries(emallocator_test PRIVATE emallocator::emallocator GTest::gtest_main)
+target_include_directories(emallocator_test PRIVATE include/)
 target_compile_features(emallocator_test PRIVATE cxx_std_17)
 
 include(GoogleTest)
