@@ -1,7 +1,7 @@
 
 #include <gtest/gtest.h>
 #include <vector>
-#include "emallocator/emallocator.hpp"
+#include "emallocator/emallocator.h"
 
 TEST(EmallocatorTest, shouldWorkWithStrContainer) {
   {
